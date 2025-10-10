@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
+/clerk_backend/node_modules
+/frontend/node_modules
 /.pnp
 .pnp.*
+
+# Yarn
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -24,14 +28,17 @@
 .DS_Store
 *.pem
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files (opt-in if needed)
+.env
+.env.*
+clerk_backend/.env
+frontend/.env
 
 # vercel
 .vercel
