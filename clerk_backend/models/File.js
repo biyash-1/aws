@@ -7,7 +7,7 @@ const fileSchema = new mongoose.Schema({
         required:true,
 },
 
-UserId:{
+userId:{
     type:mongoose.Schema.Types.ObjectId,
     ref:"User",
     required:true
@@ -22,6 +22,10 @@ key:{
 
     type:String,
 
+    required:true,
+},
+url:{
+    type:String,
     required:true,
 },
  uploadedAt: {

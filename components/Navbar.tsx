@@ -38,6 +38,9 @@ const Navbar = () => {
           <li>
             <Link href="/notifications">Notifications</Link>
           </li>
+            <li>
+            <Link href="/myuploads">Notifications</Link>
+          </li>
         </ul>
 
         {/* Auth Section */}
