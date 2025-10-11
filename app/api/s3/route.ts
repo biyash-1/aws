@@ -51,6 +51,6 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ downloadUrl });
   } catch (err) {
     console.error("Error generating download URL:", err);
-    return NextResponse.json({ error: "Failed to generate download URL" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to generate ur download URL" }, { status: 500 });
   }
 }
