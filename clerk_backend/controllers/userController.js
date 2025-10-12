@@ -3,7 +3,8 @@ import { clerkClient } from "@clerk/express";
 
 export const syncUser = async (req, res) => {
   try {
-    const clerkId = req.auth.userId; // requireAuth() ensures this exists
+    const auth = await req.auth();
+    const clerkId = auth.userId; // requireAuth() ensures this exists
     if (!clerkId) return res.status(401).json({ message: "Not authenticated" });
 
     // Get user info from Clerk

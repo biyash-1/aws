@@ -24,8 +24,8 @@ export default function MyUploadsPage() {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();
-        console.log("data is data..",data);
-        setFiles(data.files || []);
+        console.log("data is data..", data);
+        setFiles(data || []);
       } catch (err) {
         console.error("Failed to fetch files:", err);
       } finally {
