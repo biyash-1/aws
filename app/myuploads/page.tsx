@@ -60,7 +60,7 @@ export default function MyUploadsPage() {
         {files.map((file) => (
           <li
             key={file._id}
-            className="py-3 flex justify-between items-center hover:bg-gray-50 px-2 rounded-lg"
+            className="py-4 flex justify-between items-center hover:bg-gray-50 px-2 rounded-lg"
           >
             <div>
               <p className="font-medium text-gray-800">{file.filename}</p>
